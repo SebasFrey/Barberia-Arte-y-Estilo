@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario 4</title>
+</head>
+
+<body>
+  <form action="Formulario 4" method="post">
+    <!--lista desplegable-->
+    Seleccione Su Pais: <br />
+    <select name="Pais">
+      <option value="1">Argentina</option>
+      <option value="3">Colombia</option>
+      <option value="5">Uruguay</option>
+      <option value="2">Alemania</option>
+      <option value="4">España</option>
+    </select>
+    <br /><br />
+    <!--lista desplegable para elegir multiples valores-->
+    Seleccione Su o Sus Colores Favoritos <br>
+    <select name="Colores[]" size="4" multiple>
+      <option value="1">Azul</option>
+      <option value="2">Rosa</option>
+      <option value="3">Amarillo</option>
+      <option value="4">Negro</option>
+      <option value="5">Marron</option>
+    </select>
+    <br /><br>
+    <input type="button" value="Aceptar"><br><br>
+    <!--Seleccionar Un Valor Dentro De varios De Forma Agrupada-->
+    Selecciones Frutas o Verduras <br>
+    <select name="Articulos">
+      <optgroup label="frutas">
+        <option value="1">mango</option>
+        <option value="2">sandia</option>
+        <option value="3">manzanas</option>
+        <option value="4">banano</option>
+      </optgroup>
+      <optgroup label="vegetales">
+        <option value="1">zanahorias</option>
+        <option value="2">aguacate</option>
+        <option value="3">tomate</option>
+        <option value="4">cebollas</option>
+      </optgroup>
+    </select>
+    <br><br>
+    <input type="submit" value="Enviar" />
+  </form>
+</body>
+
+</html>

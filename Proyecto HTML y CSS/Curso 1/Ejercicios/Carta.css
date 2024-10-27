@@ -1,0 +1,41 @@
+body {
+    background-color: #1c1c1c;
+    font-family: sans-serif;
+    color: #f1ccba;
+}
+
+.card {
+    background: #23714d;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px 10px;
+    box-shadow: 0px 0px 25px white;
+    border-radius: 10px;
+}
+
+.card_title {
+    padding-top: 10px;
+    font-size: 35px;
+    margin: 0;
+}
+
+.card_description {
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+.card_content {
+    font-size: 15px;
+    padding: 20px;
+    padding-bottom: 0;
+    text-align: justify;
+}
+
+.card_img {
+    width: 200px;
+    border-radius: 50%;
+
+}

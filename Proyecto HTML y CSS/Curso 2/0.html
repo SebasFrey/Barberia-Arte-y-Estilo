@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Base De Formulario</title>
+  </head>
+
+  <body>
+    <h4>Registro de usuario</h4>
+    <form action="Base De Formulario" method="post">
+      Ingrese Usuario <input type="text" name="usuario" size="20" /><br /><br />
+      Ingrese Clave
+      <!-- password hace que la contraseña no sea visible-->
+      <input type="password" name="contraseña" size="20" /> <br /><br />
+      <!-- inserta boton de aceptar-->
+      <input type="button" value="Aceptar" />
+      <!-- borra  -->
+      <input type="reset" value="Borrar" /> <br /><br />
+      <!-- pide un mail -->
+      Ingrese Mail <input type="email" name="Correo" /><br /><br />
+      <input type="submit" value="Enviar" /><br /><br />
+      Comentarios <br />
+      <textarea name="Comentarios" cols="30" rows="10"></textarea> <br /><br />
+      <!-- preguntas de seleccion multiple -->
+      Cuales deportes conoce? <br /><br />
+      <input type="checkbox" name="basquet" />basquetbol <br />
+      <input type="checkbox" name="futboñ" />futbol <br />
+      <input type="checkbox" name="tenis" /> tenis <br />
+      <input type="checkbox" name="gols" />golf <br />
+      <input type="submit" value="Enviar" /> <br /><br />
+      <!-- preguntas de seleccion unica -->
+      Indique su nivel academico <br /><br />
+      <input type="radio" name="nivel academico" value="1" /> Primaria <br />
+      <input type="radio" name="nivel academico" value="2" /> Secundaria <br />
+      <input type="radio" name="nivel academico" value="3" /> Universidad <br />
+      <input type="radio" name="nivel academico" value="4" /> Sin estudios
+      <br />
+      <input type="submit" value="Enviar" /> <br /><br />
+      <br /><br />
+      <!--lista desplegable-->
+      Seleccione su pais: <br />
+      <select name="pais">
+        <option value="1">Argentina</option>
+        <option value="3">Colombia</option>
+        <option value="5">Uruguay</option>
+        <option value="2">Alemania</option>
+        <option value="4">España</option>
+      </select>
+      <br /><br />
+      <!--lista desplegable para elegir varios valores-->
+      Seleccione Su o Sus Colores favoritos <br />
+      <select name="Colores[]" size="4" multiple>
+        <option value="1">Azul</option>
+        <option value="2">Rosa</option>
+        <option value="3">Amarillo</option>
+        <option value="4">Negro</option>
+        <option value="5">Marron</option>
+      </select>
+      <!--seleccion de agrupamiento-->
+      <br /><br />
+      Selecciones Frutas o vegetales
+      <select name="Articulos">
+        <optgroup label="frutas">
+          <option value="1">mango</option>
+          <option value="2">sandia</option>
+          <option value="3">manzanas</option>
+          <option value="4">banano</option>
+        </optgroup>
+        <optgroup label="vegetales">
+          <option value="1">zanahorias</option>
+          <option value="2">aguacate</option>
+          <option value="3">tomate</option>
+          <option value="4">cebollas</option>
+        </optgroup>
+      </select>
+      <input type="submit" value="Enviar" /> <br />
+      <br />
+      <!-- botonescon imagenes-->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+      <button class="btn"><i class="fa fa-save"> Guardar</i></button>
+      <button class="btn"><i class="fa fa-trash"> Eliminar</i></button>
+      <button class="btn"><i class="fa fa-edit"> Editar</i></button>
+      <br /><br />
+      <!-- Selector de archivos-->
+      Selecciones archivo a cargar <input type="file" name="inserta_archivo" />
+      <br />
+      <input type="submit" value="Enviar" /><br /><br />
+      <!-- foco de controles -->
+      <input type="text" name="textol" size="5" tabindex="1" />
+      <input type="text" name="texto2" size="5" tabindex="2" />
+      <input type="text" name="texto3" size="5" tabindex="3" /> <br />
+      <input type="text" name="texto4" size="5" tabindex="4" />
+      <input type="text" name="texto5" size="5" tabindex="5" />
+      <input type="text" name="texto6" size="5" tabindex="6" /> <br />
+      <input type="text" name="texto7" size="5" tabindex="7" />
+      <input type="text" name="texto8" size="5" tabindex="8" />
+      <input type="text" name="texto9" size="5" tabindex="9" />
+<br><br>
+
+<!-- desabilitar-->
+seleccione laseccion donde desplegable <br>
+<input type="radio" name="seccion" value="1" disabled>Niños<br>
+<input type="radio" name="seccion" value="2" >Adolecenes<br>
+<input type="radio" name="seccion" value="3" >adultos<br>
+<input type="button" value="Enviar">
+<br><br>
+<!--controlar cantidad de caracyeres -->
+datos
+<input type="text" name="datos" maxlength="20" size="20"><br>
+otros
+<input type="text" name="otros" maxlength="20" size="20"><br>
+<input type="text" name="Envia">
+
+    </form>
+    <br /><br />
+    <!-- agrupamiento de controles-->
+    <fieldset>
+      <legend>Datos Personales</legend>
+      Nombres Y Apellidos <input type="text" name="Nom_Ape" size="30" /><br />
+      Documento De identida <input type="text" name="Dni" saze="8" /> <br />
+      Fecha De Nacimeinto <input type="text" name="Fecha" size="7" /> <br />
+      Direccion <input type="text" name="Diceccion" size="50" /><br />
+      Telefono <input type="text" name="Tel" size="8" /> <br />
+    </fieldset>
+    <br /><br />
+    <fieldset>
+      <legend>Dastos de empresa</legend>
+      Nombre De La Empresa
+      <input type="text" name="Nom_Empresa" size="30" /><br />
+      Actividad <input type="text" name="Actividad" saze="50" /> <br />
+      Direccion <input type="text" name="Direccion" size="50" /> <br />
+      Telefono <input type="text" name="Tel_Empresa" size="8" /> <br />
+    </fieldset>
+  </body>
+</html>

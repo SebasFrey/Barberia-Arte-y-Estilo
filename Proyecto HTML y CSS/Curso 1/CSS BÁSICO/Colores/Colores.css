@@ -1,0 +1,15 @@
+.box {
+    padding: 20px 50px;
+    margin: 20px;
+    margin-left: 100px;
+    background: hsl(210, 40%, 85%);
+    text-align: center;
+    color: hsl(210, 40%, 45%);
+    font-family: sans-serif;
+    font-weight: bold;
+    border-top: 2px solid hsl(210, 40%, 45%);
+}
+
+    {}
+
+    {}

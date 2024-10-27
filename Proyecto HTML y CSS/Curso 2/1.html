@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario 1</title>
+</head>
+
+<body>
+  <h4>Registro de usuario</h4>
+  <form action="Formulario1" method="post">
+    Ingrese Usuario 
+    <input type="text" name="usuario" size="20" /><br /><br />
+
+    <!-- password hace que la contraseña no sea visible-->
+
+    Ingrese Clave
+    <input type="password" name="contraseña" size="20" /> <br /><br />
+
+    <!-- inserta boton de aceptar-->
+
+    <input type="button" value="Aceptar" />
+
+    <!-- borra  -->
+
+    <input type="reset" value="Borrar" /> <br /><br />
+
+    <!-- pide un mail -->
+
+    Ingrese Mail <br>
+    <input type="email" name="Correo" /><br /><br />
+    <input type="submit" value="Enviar" /><br /><br />
+    Comentarios <br />
+    <textarea name="Comentarios" cols="30" rows="10" placeholder="Describa que quiere en menos de 30 palabras"></textarea>
+    <br /><br />
+
+    <!-- preguntas de seleccion multiple -->
+
+    ¿Cuales De Estos Deportes Conoces? <br /><br />
+    <input type="checkbox" name="Baloncesto" />Baloncesto <br />
+    <input type="checkbox" name="Futbol" />Futbol<br />
+    <input type="checkbox" name="Tenis" /> Tenis <br />
+    <input type="checkbox" name="Voleibol" />Voleibol <br><br>
+    <input type="submit" value="Enviar" /> <br /><br />
+
+    <!-- preguntas de seleccion unica -->
+
+    Indique Su Nivel Academico <br /><br />
+    <input type="radio" name="nivel academico" value="1" /> Primaria <br />
+    <input type="radio" name="nivel academico" value="2" /> Secundaria <br />
+    <input type="radio" name="nivel academico" value="3" /> Universidad <br />
+    <input type="radio" name="nivel academico" value="4" /> Sin estudios<br /><br>
+    <input type="submit" value="Enviar" />
+    <br /><br />
+  </form>
+</body>
+
+</html>
